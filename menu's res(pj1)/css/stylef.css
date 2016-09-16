@@ -20,53 +20,55 @@ div{
 	border-radius:12px;
 }
 
-.first{
-	background:url("images/bo.jpg");
-	background-size:cover;
-	  
-}
-
-.second{
-	background:url("images/cangu.jpg");
-	background-size:cover;
-}
-
-.third{
-	background:url("images/cahoi.jpg");
+.ri-u1{
+	background:url("../images/ru-u1.jpg");
 	background-size:cover;
 	background-position:center;
 }
 
-.r2-f1{
-	background:url("images/f1.jpg");
-	background-size:cover;
-}
-
-.r2-f2{
-	background:url("images/f2.jpg");
-	background-size:cover;
-}
-
-.r2-f3{
-	background:url("images/f3.jpg");
-	background-size:cover;
-} 
-
-.r2-r1{
-	background:url("images/r1.jpg");
-	background-size:cover;
-}
-
-.r2-r2{
-	background:url("images/r2.jpg");
-	background-size:cover;
-}
-
-.r2-r3{
-	background:url("images/r3.jpg");
+.ri-u2{
+	background:url("../images/ru-u2.jpg");
 	background-size:cover;
 	background-position:center;
 }
+
+.ri-u3{
+	background:url("../images/ru-u3.jpg");
+	background-size:cover;
+	background-position:center;
+}
+
+.rw-u1{
+	background:url("../images/rw-u1.jpg");
+	background-size:cover;
+	background-position:center;
+}
+
+.rw-u2{
+	background:url("../images/rw-u2.jpg");
+	background-size:cover;
+}
+
+.rw-u3{
+	background:url("../images/rw-u3.jpg");
+	background-size:cover;
+}
+
+.rz-u1{
+	background:url("../images/rz-u1.jpg");
+	background-size:cover;
+}
+
+.rz-u2{
+	background:url("../images/rz-u2.jpg");
+	background-size:cover;
+}
+
+.rz-u3{
+	background:url("../images/rz-u3.jpg");
+	background-size:cover;
+}
+
 
 p{
 	color: rgba(255,255,255, 1);

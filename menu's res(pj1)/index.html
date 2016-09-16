@@ -5,7 +5,36 @@
 		<title>Menu</title>
 		<script src="jquery/jquery-3.1.0.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+		<script type="text/javascript">
+			jQuery(document).ready(function(){
+				var but1 = $("button#b1");
+				var but2 = $("button#b2");
+				var art1 = $("article#a1");
+				var art2 = $("article#a2");
+				var wid = $("body").width();
+				var hei = $("body").height();
+				
+				but1.css({"margin-left":wid/2 - 120/2});
+				but2.css({"margin-left":wid/2 - 120/2});
+				
+				but1.click(function(){
+					var sec1 = $("article#a1 section:nth-child(1)");
+					sec1.hide("fast", "linear", function(){
+						art1.append($(this));
+						$(this).css("display", "block")
+					});
+				})
+				
+				but2.click(function(){
+					var sec2 = $("article#a2 section:nth-child(1)");
+					sec2.hide("fast", "linear", function(){
+						art2.append($(this));
+						$(this).css("display", "block")
+					});
+				})
+			})
+		</script>
 	</head>
 	
 	<body>
@@ -14,16 +43,14 @@
 		<h1>Badiane's restaurant</h1>
 		<h2>A Hanoi City Eatery</h2>
 	</header>
-		
-	<article>
-	
+			<a href="food.html"><h4 style="margin:0 0 -20px 16px">More detail...</h4></a>
+	<article id="a1">
 		<section>
 		<div class="first show-description">
 			<p>Carpaccio <span class="price">$140</span><br />
 			<small>Combining pungent mustard and living section sliced ​​beef , arugula salad and fresh broccoli sprouts mixed with candied ginger , shallots</small>
 			</p>
 		</div>
-		<button>Order Now!</button>
 		</section>
 		
 		<section>
@@ -32,7 +59,6 @@
 			<small>The sweetness of the fish , lightly sour tomato , crispy onions and the close proximity of fleshy days of diced avocado</small>
 			</p>	
 		</div>
-		<button>Order Now!</button>
 		</section>
 		
 		<section>
@@ -42,7 +68,6 @@
 			</p>
 			<!--<button>Like</button>-->
 		</div>
-		<button>Order Now!</button>
 		</section>
 		
 		<section>
@@ -51,7 +76,6 @@
 			<small>Saffron emulsion with exciting yellow add pleasant flavour into each piece of seared scallops & seafood, bouquet of vegetables </small>
 			</p>
 		</div>
-		<button>Order Now!</button>
 		</section>
 
 		<section>
@@ -60,7 +84,6 @@
 			<small>The stater called Rolled prosciutto with grilled eggplants & Gorgonzola cheese, arugula & artichoke in basil oil & balsamic glaze</small>
 			</p>
 		</div>
-		<button>Order Now!</button>
 		</section>
 		
 		<section>
@@ -69,7 +92,6 @@
 			<small>Banana fritters with fresh coconut, chocolate sauce</small>
 			</p>
 		</div>
-		<button>Order Now!</button>
 		</section>
 		
 		<section>
@@ -78,7 +100,6 @@
 			<small>You may don't know!<br />Bread used in starter is for balancing your taste before upcoming main courses.</small>
 			</p>
 		</div>
-		<button>Order Now!</button>
 		</section>
 		
 		<section>
@@ -87,7 +108,6 @@
 			<small>Spicy cocoa crème brulée, chocolate fondant & ganache, curacao Chantilly, tangerine sorbet</small>
 			</p>
 		</div>
-		<button>Order Now!</button>
 		</section>
 		
 		<section>
@@ -96,11 +116,90 @@
 			<small>Soft and tenacious rice papers are skilfully wrapped up with shelled shrimps and various fresh vegetables</small>
 			</p>
 		</div>
-		<button>Order Now!</button>
 		</section>
 		
 	</article>
 
+	<button id="b1">View more</button>
+	
+	<a href="drinks.html"><h4 style="margin:0 0 -20px 16px">More detail...</h4></a>
+	<article id="a2" style="clear: both;">
+		<section>
+		<div class="ri-u1 show-description">
+			<p>Strawberry margarita<span class="price">$14</span><br />
+			<small>100% Blue Agave Silver tequila, Watermelon puree, Minute Maid® Lemonade shaken and strawberry-flavored ice cubes.</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="ri-u2 show-description">
+			<p>Blueberry lemonade<span class="price">$10</span><br />
+			<small>Relax as you enjoy this Southern blend of Firefly Moonshine Strawberry, ABSOLUT® Berri Açaí vodka, lemonade and Reàl® Blueberry puree.</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="ri-u3 show-description">
+			<p>D&B TNTEA<span class="price">$12</span><br />
+			<small>We blend ABSOLUT® vodka, Tanqueray® gin and BACARDI® Superior rum, then add Grand Marnier®,  sweet ’n’ sour and Coca-Cola®</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="rw-u1 show-description">
+			<p>Original snow cone<span class="price">$18</span><br />
+			<small>DeKuyper® Watermelon Pucker®, Malibu® Coconut rum, Pinnacle® Cherry vodka, DeKuyper® blue curaçao, a splash of Sprite® and pomegranate syrup.</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="rw-u2 show-description">
+			<p>Coconut margarita<span class="price">$15</span><br />
+			<small>Sauza® Blue 100% Blue Agave Silver tequila, Malibu® Coconut rum, Pinnacle® Key Lime Whipped vodka</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="rw-u3 show-description">
+			<p>Glow kone®<span class="price">$18</span><br />
+			<small>A refreshing fruity blend of Stoli® Vanil™ vodka, Pinnacle® Cherry vodka, lime sour mix, Monin® Vanilla and grenadine</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="rz-u1 show-description">
+			<p>ZOMBIE <span class="price">$12</span><br />
+			<small>A potent concoction of BACARDI® Superior rum, Cruzan® Aged rum, pineapple juice, orange juice and grenadine</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="rz-u2 show-description">
+			<p>ORIGINAL CORONARITA™ <span class="price">$12</span><br />
+			<small>7 oz. Corona® in a refreshing margarita made with Sauza® Blue 100% Blue Agave Silver tequila, DeKuyper® triple sec</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="rz-u3 show-description">
+			<p>SPICED STRAWBERRY <span class="price">$12</span><br />
+			<small>Sauza® Blue 100% Blue Agave Silver tequila, Captain Morgan® Original Spiced Rum, 14 Hands Vineyards Merlot</small>
+			</p>
+		</div>
+		</section>
+		
+	</article>
+	
+	<button id="b2">View more</button>
+	
 	<footer>
 		<h4>Designed by &copyNickyDo</h4>
 	</footer>
