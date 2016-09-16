@@ -10,13 +10,16 @@
 			jQuery(document).ready(function(){
 				var but1 = $("button#b1");
 				var but2 = $("button#b2");
+				var but3 = $("button#b3");
 				var art1 = $("article#a1");
 				var art2 = $("article#a2");
+				var art3 = $("article#a3");
 				var wid = $("body").width();
 				var hei = $("body").height();
 				
 				but1.css({"margin-left":wid/2 - 120/2});
 				but2.css({"margin-left":wid/2 - 120/2});
+				but3.css({"margin-left":wid/2 - 120/2});
 				
 				but1.click(function(){
 					var sec1 = $("article#a1 section:nth-child(1)");
@@ -33,6 +36,15 @@
 						$(this).css("display", "block")
 					});
 				})
+				
+				but3.click(function(){
+					var sec3 = $("article#a3 section:nth-child(1)");
+					sec3.hide("fast", "linear", function(){
+						art3.append($(this));
+						$(this).css("display", "block")
+					});
+				})
+				
 			})
 		</script>
 	</head>
@@ -182,7 +194,7 @@
 		
 		<section>
 		<div class="rz-u2 show-description">
-			<p>ORIGINAL CORONARITA™ <span class="price">$12</span><br />
+			<p>ORIGINAL CORONARITA™ <span class="price">$10</span><br />
 			<small>7 oz. Corona® in a refreshing margarita made with Sauza® Blue 100% Blue Agave Silver tequila, DeKuyper® triple sec</small>
 			</p>
 		</div>
@@ -190,7 +202,7 @@
 		
 		<section>
 		<div class="rz-u3 show-description">
-			<p>SPICED STRAWBERRY <span class="price">$12</span><br />
+			<p>SPICED STRAWBERRY <span class="price">$15</span><br />
 			<small>Sauza® Blue 100% Blue Agave Silver tequila, Captain Morgan® Original Spiced Rum, 14 Hands Vineyards Merlot</small>
 			</p>
 		</div>
@@ -199,6 +211,85 @@
 	</article>
 	
 	<button id="b2">View more</button>
+	
+	<a href="noodle.html"><h4 style="margin:0 0 -20px 16px">More detail...</h4></a>
+	<article id="a3">
+		<section>
+		<div class="n1-r1 show-description">
+			<p>Spicy korean beef <span class="price">$25</span><br />
+			<small>Ramen noodles tossed with a sweet and spicy Korean-style Gochujang sauce, naturally raised steak, napa and red cabbage</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="n1-r2 show-description">
+			<p>Chicken veracruz salad <span class="price">$20</span><br />
+			<small>Mixed greens topped with Roma tomato, red onion, chili-lime chicken, crumbled naturally raised bacon, fresh-cut corn</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="n1-r3 show-description">
+			<p>Napa market salad <span class="price">$30</span><br />
+			<small>Mixed greens layered with Gala apple slices, Roma tomato and red bell pepper topped with pulled grilled chicken</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="n2-r1 show-description">
+			<p>Pesto cavatappi<span class="price">$22</span><br />
+			<small>Curly pasta, basil pesto, garlic, mushrooms, tomato, wine, cream, parmesan and Italian parsley</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="n2-r2 show-description">
+			<p>Pad Thai<span class="price">$28</span><br />
+			<small>This new recipe highlights a more traditional sauce and features green onions instead of carrots</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="n2-r3 show-description">
+			<p>Bangkok Curry<span class="price">$20</span><br />
+			<small>Sweet coconut curry, broccoli, carrots, red bell pepper, onion, mushrooms, a light portion of rice noodles</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="n3-r1 show-description">
+			<p>Steak stroganoff<span class="price">$25</span><br />
+			<small>Naturally raised steak, mushroom sherry cream sauce, fresh herbs, cracked pepper, sautéed mushrooms, wavy egg noodles</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="n3-r2 show-description">
+			<p>Penne rosa<span class="price">$20</span><br />
+			<small>Spicy tomato cream sauce, penne pasta, mushrooms, tomato, spinach, wine and parmesan or feta</small>
+			</p>
+		</div>
+		</section>
+		
+		<section>
+		<div class="n3-r3 show-description">
+			<p>Buttered noodles<span class="price">$30</span><br />
+			<small>Tender wavy egg noodles, butter, Italian seasonings and parmesan</small>
+			</p>
+		</div>
+		</section>
+		
+	</article>
+	
+	<button id="b3">View more</button>
+	
 	
 	<footer>
 		<h4>Designed by &copyNickyDo</h4>
